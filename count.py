@@ -14,7 +14,7 @@ def change_time():
 # 循环的时间
 commit_date = datetime.datetime.now()
 
-for i in range(random.randint(1, 18)):
+for i in range(random.randint(1, 2)):
     f = open('data.txt', 'a+')
     commit_date = commit_date + change_time()
     f.writelines(commit_date.isoformat() + '\n')
